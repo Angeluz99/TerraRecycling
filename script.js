@@ -43,19 +43,19 @@ document.addEventListener("DOMContentLoaded", () => {
       en: {
         h1: "Comprehensive Management of Electronic and IT Assets",
         p: "We offer comprehensive solutions for the disposal and recycling of your electronic assets.",
-        btn: { text: "Learn more", link: "#services" },
+        btn: { text: "Learn more", link: "#servicios" },
       },
     },
     {
       es: {
-        h1: "Tasa de recuperación: 95%",
-        p: "Recuperamos materiales críticos y los reintroducimos en la cadena de suministro.",
-        btn: { text: "Ver compromiso", link: "#compromiso" },
+        h1: "Destrucción segura de información",
+        p: "Garantizamos la protección de datos y el cumplimiento normativo.",
+        btn: { text: "Ver compromiso", link: "#beneficios" },
       },
       en: {
         h1: "Recovery Rate: 95%",
         p: "We recover critical materials and return them to the supply chain.",
-        btn: { text: "See commitment", link: "#compromiso" },
+        btn: { text: "See commitment", link: "#beneficios" },
       },
     },
   ];

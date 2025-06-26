@@ -367,12 +367,14 @@ section h3 {
   border-radius: 2vw;
   margin-left: 25%;
 }
-
+.logo-bottom {
+  display: none;
+}
 .porque-elegirnos {
   width: 100%;
   padding: 5vw;
   position: relative;
-  padding: 0;
+  padding: 4vw;
   margin: 0vw;
   text-align: center;
   border-radius: 1%;
@@ -430,6 +432,10 @@ section h3 {
 .contacto {
   margin: 5vw 0;
   border: solid;
+}
+
+.contacto {
+  text-align: center;
 }
 
 footer.footer {
@@ -562,6 +568,14 @@ footer.footer {
   .mobile-menu,
   .menu-toggle {
     display: none !important;
+  }
+
+  .hero {
+    background-color: black;
+  }
+  .img-slide {
+    width: 80%;
+    margin-left: 10%;
   }
 
   .hero-slide::before {
@@ -702,11 +716,24 @@ footer.footer {
     margin: 2vw;
   }
 
+  .logo-bottom {
+    display: block;
+    margin-inline: auto;
+  }
+
   .porque-elegirnos {
+    height: 20vw;
     display: flex;
-    padding-inline: 5vw;
+    padding-inline: 4vw;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+  }
+
+  .porque-elegirnos article {
+    margin-inline: 3vw;
+    width: 9vw;
+    margin-bottom: 5vw;
   }
 
   .porque-elegirnos h3 {
