@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terra Recycling</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherish&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="topbar">
+      <div class="mobile-menu hidden">
+        <a href="#hero"
+          ><span class="lang lang-es">Inicio</span
+          ><span class="lang lang-en hidden">Home</span></a
+        >
+        <a href="#servicios"
+          ><span class="lang lang-es">Servicios</span
+          ><span class="lang lang-en hidden">Services</span></a
+        >
+        <a href="#compromiso"
+          ><span class="lang lang-es">Compromiso</span
+          ><span class="lang lang-en hidden">Commitment</span></a
+        >
+
+        <a href="#gama-servicios"
+          ><span class="lang lang-es">Soluciones</span
+          ><span class="lang lang-en hidden">Solutions</span></a
+        >
+        <a href="#porque-elegirnos"
+          ><span class="lang lang-es">¿Por qué elegirnos?</span
+          ><span class="lang lang-en hidden">Why Choose Us?</span></a
+        >
+        <a href="#contacto"
+          ><span class="lang lang-es">Contacto</span
+          ><span class="lang lang-en hidden">Contact</span></a
+        >
+      </div>
+      <div class="topbar-left">
+        <button class="menu-toggle" aria-label="Menú">
+          <i class="bi bi-list"></i>
+        </button>
+        <img
+          class="logo-head"
+          src="images/logo.png"
+          alt="Logo Terra Recycling"
+        />
+      </div>
+      <div class="desktop-menu">
+        <a href="#hero">
+          <span class="lang lang-es">Inicio</span>
+          <span class="lang lang-en hidden">Home</span>
+        </a>
+        <a href="#gama-servicios">
+          <span class="lang lang-es">Servicios</span>
+          <span class="lang lang-en hidden">Services</span>
+        </a>
+        <a href="#compromiso">
+          <span class="lang lang-es">Compromiso</span>
+          <span class="lang lang-en hidden">Commitment</span>
+        </a>
+        <a href="#soluciones">
+          <span class="lang lang-es">Soluciones</span>
+          <span class="lang lang-en hidden">Solutions</span>
+        </a>
+        <a href="#porque-elegirnos">
+          <span class="lang lang-es">¿Por qué elegirnos?</span>
+          <span class="lang lang-en hidden">Why Choose Us?</span>
+        </a>
+        <a href="#contacto">
+          <span class="lang lang-es">Contacto</span>
+          <span class="lang lang-en hidden">Contact</span>
+        </a>
+      </div>
+
+      <div class="lang-switch">
+        <a href="#">🌐</a>
+      </div>
+    </nav>
+
+    <!-- 1. Encabezado / Hero -->
+    <header id="hero" class="hero">
+      <!-- Video -->
+      <video class="hero-slide active" autoplay muted loop playsinline>
+        <source src="waterfixed.mp4" type="video/mp4" />
+        Tu navegador no soporta video HTML5.
+      </video>
+
+      <!-- Imagen -->
+      <img
+        class="hero-slide"
+        src="images/head.jpg"
+        alt="Fondo Terra Recycling"
+      />
+
+      <!-- Contenido (dinámico) -->
+      <div class="hero-content" id="hero-content">
+        <h1 class="lang lang-es"></h1>
+        <h1 class="lang lang-en hidden"></h1>
+
+        <p class="lang lang-es"></p>
+        <p class="lang lang-en hidden"></p>
+
+        <a id="hero-btn" class="hero-btn lang lang-es" href="#servicios"
+          >Conoce más</a
+        >
+        <a
+          id="hero-btn-en"
+          class="hero-btn lang lang-en hidden"
+          href="#services"
+          >Learn more</a
+        >
+      </div>
+    </header>
+    <section id="servicios" class="servicios">
+      <h2>
+        <span class="lang lang-es"
+          >Gestión Integral de Activos Electrónicos e Informáticos</span
+        >
+        <span class="lang lang-en hidden"
+          >Comprehensive Management of Electronic and IT Assets</span
+        >
+      </h2>
+
+      <div class="servicio-etapas">
+        <article>
+          <img src="images/tierra.png" alt="tierra" />
+          <h3>
+            <span class="lang lang-es">Recepción</span>
+            <span class="lang lang-en hidden">Reception</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Recolección y transporte seguro de sus activos
+              electrónicos.</span
+            >
+            <span class="lang lang-en hidden"
+              >Secure collection and transport of your electronic assets.</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <img src="images/tierra.png" alt="tierra" />
+          <h3>
+            <span class="lang lang-es">Evaluación</span>
+            <span class="lang lang-en hidden">Evaluation</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Análisis exhaustivo del estado y valor de cada equipo.</span
+            >
+            <span class="lang lang-en hidden"
+              >Thorough analysis of the condition and value of each
+              device.</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <img src="images/tierra.png" alt="tierra" />
+          <h3>
+            <span class="lang lang-es">Disposición</span>
+            <span class="lang lang-en hidden">Disposition</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Reutilización, reciclaje o destrucción segura según
+              requerimientos.</span
+            >
+            <span class="lang lang-en hidden"
+              >Reuse, recycling, or secure destruction depending on
+              requirements.</span
+            >
+          </p>
+        </article>
+      </div>
+
+      <img
+        src="images/compromiso.jpg"
+        alt="compromiso"
+        class="compromiso-image"
+      />
+    </section>
+    <section id="compromiso" class="compromiso">
+      <h2>
+        <span class="lang lang-es">Compromiso con el Medio Ambiente</span>
+        <span class="lang lang-en hidden">Commitment to the Environment</span>
+      </h2>
+
+      <h3>
+        <span class="lang lang-es">Reciclaje Electrónico:</span>
+        <span class="lang lang-en hidden">Electronic Recycling:</span>
+      </h3>
+      <p>
+        <span class="lang lang-es"
+          >Aseguramos el reciclaje responsable de todos los materiales.</span
+        >
+        <span class="lang lang-en hidden"
+          >We ensure responsible recycling of all materials.</span
+        >
+      </p>
+
+      <h3>
+        <span class="lang lang-es">Economía Circular:</span>
+        <span class="lang lang-en hidden">Circular Economy:</span>
+      </h3>
+      <p>
+        <span class="lang lang-es"
+          >Promovemos modelos de reutilización y remanufactura.</span
+        >
+        <span class="lang lang-en hidden"
+          >We promote reuse and remanufacturing models.</span
+        >
+      </p>
+
+      <h3>
+        <span class="lang lang-es">Cuidado Ambiental:</span>
+        <span class="lang lang-en hidden">Environmental Care:</span>
+      </h3>
+      <p>
+        <span class="lang lang-es"
+          >Cumplimos con las más altas normas ambientales.</span
+        >
+        <span class="lang lang-en hidden"
+          >We comply with the highest environmental standards.</span
+        >
+      </p>
+    </section>
+    <section class="principios">
+      <h2>
+        <span class="lang lang-es">Reducir, Reusar, Reciclar</span>
+        <span class="lang lang-en hidden">Reduce, Reuse, Recycle</span>
+      </h2>
+
+      <h3>
+        <i class="bi bi-arrows-angle-contract"></i>
+        <span class="lang lang-es">REDUCE</span>
+        <span class="lang lang-en hidden">REDUCE</span>
+      </h3>
+      <p>
+        <span class="lang lang-es">Minimización del consumo</span>
+        <span class="lang lang-en hidden">Minimization of consumption</span>
+      </p>
+
+      <h3>
+        <i class="bi bi-arrow-counterclockwise"></i>
+        <span class="lang lang-es">REUSA</span>
+        <span class="lang lang-en hidden">REUSE</span>
+      </h3>
+      <p>
+        <span class="lang lang-es">Recuperación de recursos valiosos</span>
+        <span class="lang lang-en hidden">Recovery of valuable resources</span>
+      </p>
+
+      <h3>
+        <i class="bi bi-recycle"></i>
+        <span class="lang lang-es">RECICLA</span>
+        <span class="lang lang-en hidden">RECYCLE</span>
+      </h3>
+      <p>
+        <span class="lang lang-es">Extensión de la vida útil</span>
+        <span class="lang lang-en hidden">Extension of useful life</span>
+      </p>
+
+      <img class="principios-img" src="images/papelera.png" alt="papelera" />
+
+      <p class="principios-paragraph">
+        <span class="lang lang-es">
+          Un <strong>enfoque integral de gestión de activos</strong> debe
+          basarse en los principios de la<strong> economía circular </strong
+          >para maximizar el <strong>aprovechamiento de los recursos.</strong>
+        </span>
+        <span class="lang lang-en hidden">
+          A <strong>comprehensive asset management approach</strong> must be
+          based on the principles of the <strong>circular economy</strong> to
+          maximize <strong>resource utilization.</strong>
+        </span>
+      </p>
+    </section>
+
+    <section class="confianza">
+      <h2 class="lang lang-es">Confianza y Seguridad</h2>
+      <h2 class="lang lang-en hidden">Trust and Security</h2>
+      <img src="./images/confianza.png" alt="confianza" class="confianza-img" />
+
+      <h3 class="lang lang-es">Destrucción de Datos</h3>
+      <h3 class="lang lang-en hidden">Data Destruction</h3>
+      <p class="lang lang-es">
+        Eliminación segura de información confidencial.
+      </p>
+      <p class="lang lang-en hidden">
+        Secure deletion of confidential information.
+      </p>
+
+      <h3 class="lang lang-es">Certificaciones</h3>
+      <h3 class="lang lang-en hidden">Certifications</h3>
+      <p class="lang lang-es">
+        Autorizaciones de entidades regulatorias ambientales.
+      </p>
+      <p class="lang lang-en hidden">
+        Authorizations from environmental regulatory agencies.
+      </p>
+
+      <h3 class="lang lang-es">Cumplimiento Normativo</h3>
+      <h3 class="lang lang-en hidden">Regulatory Compliance</h3>
+      <p class="lang lang-es">Apegados a las normativas legales.</p>
+      <p class="lang lang-en hidden">Aligned with legal regulations.</p>
+
+      <h3 class="lang lang-es">Transparencia</h3>
+      <h3 class="lang lang-en hidden">Transparency</h3>
+      <p class="lang lang-es">Reportes y certificados detallados.</p>
+      <p class="lang lang-en hidden">Detailed reports and certificates.</p>
+    </section>
+
+    <section class="gama-servicios" id="gama-servicios">
+      <h2>
+        <span class="lang lang-es">Gama de Servicios</span>
+        <span class="lang lang-en hidden">Range of Services</span>
+      </h2>
+      <div class="servicios-grid">
+        <article>
+          <i class="bi bi-battery-low"></i>
+          <h3>
+            <span class="lang lang-es">Baterías</span>
+            <span class="lang lang-en hidden">Batteries</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Destrucción y tratamiento especializado para todas las variedades
+              de baterías.</span
+            >
+            <span class="lang lang-en hidden"
+              >Specialized destruction and treatment for all types of
+              batteries.</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <i class="bi bi-device-hdd"></i>
+          <h3>
+            <span class="lang lang-es">Dispositivos de Almacenamiento</span>
+            <span class="lang lang-en hidden">Storage Devices</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Nos encargamos de discos duros, SSD y otros medios de
+              almacenamiento.</span
+            >
+            <span class="lang lang-en hidden"
+              >We handle hard drives, SSDs, and other storage media.</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <i class="bi bi-phone-flip"></i>
+          <h3>
+            <span class="lang lang-es">Dispositivos Móviles</span>
+            <span class="lang lang-en hidden">Mobile Devices</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Destrucción segura de smartphones, tabletas y otros dispositivos
+              portátiles.</span
+            >
+            <span class="lang lang-en hidden"
+              >Secure destruction of smartphones, tablets, and other portable
+              devices.</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <i class="bi bi-pc-display"></i>
+          <h3>
+            <span class="lang lang-es">Computadoras</span>
+            <span class="lang lang-en hidden">Computers</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Procesamos todo tipo de equipos como PCs y laptops, así como
+              servidores.</span
+            >
+            <span class="lang lang-en hidden"
+              >We process all kinds of equipment such as PCs, laptops, and
+              servers.</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <i class="bi bi-keyboard"></i>
+          <h3>
+            <span class="lang lang-es">Periféricos</span>
+            <span class="lang lang-en hidden">Peripherals</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Reciclamos una amplia variedad de dispositivos periféricos.</span
+            >
+            <span class="lang lang-en hidden"
+              >We recycle a wide variety of peripheral devices.</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <i class="bi bi-clipboard-pulse"></i>
+          <h3>
+            <span class="lang lang-es">Inventarios Industriales</span>
+            <span class="lang lang-en hidden">Industrial Inventories</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Análisis y compra de sobre inventarios del sector industrial y de
+              manufactura.</span
+            >
+            <span class="lang lang-en hidden"
+              >Analysis and purchase of excess inventory from industrial and
+              manufacturing sectors.</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <i class="bi bi-motherboard"></i>
+          <h3>
+            <span class="lang lang-es">Tarjetas Electrónicas</span>
+            <span class="lang lang-en hidden">Electronic Boards</span>
+          </h3>
+          <p>
+            <span class="lang lang-es"
+              >Destrucción y procesamiento de todo tipo de tarjetas
+              electrónicas.</span
+            >
+            <span class="lang lang-en hidden"
+              >Destruction and processing of all types of electronic
+              boards.</span
+            >
+          </p>
+        </article>
+      </div>
+
+      <p class="servicios-paragraph">
+        <span class="lang lang-es">
+          En <strong>Terra Recycling</strong> estamos preparados para recibir,
+          manejar y procesar una amplia gama de productos
+          <strong
+            >electrónicos e informáticos, diversos tipos de maquinaria
+            industrial, equipos médicos, baterías y excedentes de
+            inventario</strong
+          >
+          de la industria manufacturera, ofreciendo gran
+          <strong>flexibilidad y adaptabilidad</strong> para cualquier proyecto.
+        </span>
+        <span class="lang lang-en hidden">
+          At <strong>Terra Recycling</strong>, we are prepared to receive,
+          manage, and process a wide range of products
+          <strong
+            >including electronic and IT equipment, various types of industrial
+            machinery, medical equipment, batteries, and inventory
+            surpluses</strong
+          >
+          from the manufacturing industry, offering great
+          <strong>flexibility and adaptability</strong> for any project.
+        </span>
+      </p>
+    </section>
+
+    <img
+      src="./images/soluciones.jpg"
+      alt="soluciones"
+      class="soluciones-img"
+    />
+    <section class="soluciones">
+      <h2>
+        <span class="lang lang-es">Soluciones a la Medida</span>
+        <span class="lang lang-en hidden">Tailored Solutions</span>
+      </h2>
+
+      <h3>
+        <span class="lang lang-es">Diagnóstico</span>
+        <span class="lang lang-en hidden">Diagnosis</span>
+      </h3>
+      <p>
+        <span class="lang lang-es"
+          >Evaluamos el estado y composición de sus activos para determinar la
+          mejor ruta de disposición.</span
+        >
+        <span class="lang lang-en hidden"
+          >We evaluate the condition and composition of your assets to determine
+          the best disposal route.</span
+        >
+      </p>
+
+      <h3>
+        <span class="lang lang-es">Personalización</span>
+        <span class="lang lang-en hidden">Customization</span>
+      </h3>
+      <p>
+        <span class="lang lang-es"
+          >Diseñamos soluciones a la medida de acuerdo con sus necesidades y
+          objetivos.</span
+        >
+        <span class="lang lang-en hidden"
+          >We design tailored solutions according to your needs and
+          objectives.</span
+        >
+      </p>
+
+      <h3>
+        <span class="lang lang-es">Implementación</span>
+        <span class="lang lang-en hidden">Implementation</span>
+      </h3>
+      <p>
+        <span class="lang lang-es"
+          >Ejecutamos la disposición y reciclaje de forma segura y
+          eficiente.</span
+        >
+        <span class="lang lang-en hidden"
+          >We execute disposal and recycling safely and efficiently.</span
+        >
+      </p>
+    </section>
+
+    <section class="beneficios">
+      <h2>
+        <span class="lang lang-es">Beneficios Clave</span>
+        <span class="lang lang-en hidden">Key Benefits</span>
+      </h2>
+
+      <div class="beneficios-grid">
+        <article>
+          <h3>
+            <span class="lang lang-es">Seguridad de Datos:</span>
+            <span class="lang lang-en hidden">Data Security:</span>
+          </h3>
+          <i class="bi bi-shield-lock"></i>
+          <p>
+            <span class="lang lang-es">Destrucción segura de información</span>
+            <span class="lang lang-en hidden"
+              >Secure destruction of information</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <span class="lang lang-es">Sostenibilidad:</span>
+            <span class="lang lang-en hidden">Sustainability:</span>
+          </h3>
+          <i class="bi bi-globe"></i>
+          <p>
+            <span class="lang lang-es"
+              >Economía circular y reducción de impacto ambiental</span
+            >
+            <span class="lang lang-en hidden"
+              >Circular economy and reduced environmental impact</span
+            >
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <span class="lang lang-es">Máximo Valor:</span>
+            <span class="lang lang-en hidden">Maximum Value:</span>
+          </h3>
+          <i class="bi bi-graph-up-arrow"></i>
+          <p>
+            <span class="lang lang-es">Recuperación de valor de activos</span>
+            <span class="lang lang-en hidden">Asset value recovery</span>
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <span class="lang lang-es">Cumplimiento:</span>
+            <span class="lang lang-en hidden">Compliance:</span>
+          </h3>
+          <i class="bi bi-building-check"></i>
+          <p>
+            <span class="lang lang-es"
+              >Regulaciones ambientales y de residuos</span
+            >
+            <span class="lang lang-en hidden"
+              >Environmental and waste regulations</span
+            >
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="porque-elegirnos" id="porque-elegirnos">
+      <h2>
+        <span class="lang lang-es">¿Por qué elegirnos?</span>
+        <span class="lang lang-en hidden">Why Choose Us?</span>
+      </h2>
+
+      <article>
+        <h3>
+          <span class="lang lang-es">Experiencia Probada</span>
+          <span class="lang lang-en hidden">Proven Experience</span>
+        </h3>
+        <p>
+          <span class="lang lang-es"
+            >Expertos gestionando activos electrónicos e informáticos.</span
+          >
+          <span class="lang lang-en hidden"
+            >Experts managing electronic and IT assets.</span
+          >
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          <span class="lang lang-es">Enfoque Integral</span>
+          <span class="lang lang-en hidden">Comprehensive Approach</span>
+        </h3>
+        <p>
+          <span class="lang lang-es"
+            >Desde la recepción hasta la disposición final.</span
+          >
+          <span class="lang lang-en hidden"
+            >From reception to final disposal.</span
+          >
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          <span class="lang lang-es">Compromiso Ambiental</span>
+          <span class="lang lang-en hidden">Environmental Commitment</span>
+        </h3>
+        <p>
+          <span class="lang lang-es"
+            >Maximizamos la sostenibilidad y el reciclaje.</span
+          >
+          <span class="lang lang-en hidden"
+            >We maximize sustainability and recycling.</span
+          >
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          <span class="lang lang-es">Confianza y Seguridad</span>
+          <span class="lang lang-en hidden">Trust and Security</span>
+        </h3>
+        <p>
+          <span class="lang lang-es"
+            >Garantizamos la protección de datos y el cumplimiento
+            normativo.</span
+          >
+          <span class="lang lang-en hidden"
+            >We guarantee data protection and regulatory compliance.</span
+          >
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          <span class="lang lang-es">Alianzas Estratégicas</span>
+          <span class="lang lang-en hidden">Strategic Partnerships</span>
+        </h3>
+        <p>
+          <span class="lang lang-es">
+            Contamos con convenios internacionales para el correcto
+            procesamiento de cada uno de los materiales.
+          </span>
+          <span class="lang lang-en hidden">
+            We have international agreements for the proper processing of each
+            material.
+          </span>
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          <span class="lang lang-es">Autorizaciones Ambientales</span>
+          <span class="lang lang-en hidden">Environmental Authorizations</span>
+        </h3>
+        <p>
+          <span class="lang lang-es">
+            Contamos con las autorizaciones ambientales y gubernamentales
+            necesarias para todo tipo de proyecto de reciclaje.
+          </span>
+          <span class="lang lang-en hidden">
+            We have the necessary environmental and government authorizations
+            for all types of recycling projects.
+          </span>
+        </p>
+      </article>
+
+      <img src="images/logo.png" alt="logo" />
+    </section>
+
+    <section class="empresa-hermana">
+      <h2>
+        <span class="lang lang-es"
+          >Contamos con el respaldo de nuestra empresa Hermana</span
+        >
+        <span class="lang lang-en hidden"
+          >We have the support of our Sister Company</span
+        >
+      </h2>
+
+      <div>
+        <img
+          src="./images/hermana.jpg"
+          alt="Empresa Hermana"
+          class="empresa-hermana-img"
+        />
+      </div>
+
+      <p>
+        <span class="lang lang-es">
+          Especialistas en reuso tecnológico y recuperación de componentes
+          dedicada a la clasificación, evaluación y reacondicionamiento de
+          activos electrónicos e informáticos.
+        </span>
+        <span class="lang lang-en hidden">
+          Specialists in technological reuse and component recovery dedicated to
+          classification, evaluation, and refurbishment of electronic and IT
+          assets.
+        </span>
+      </p>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>
+        <span class="lang lang-es">Contacto</span>
+        <span class="lang lang-en hidden">Contact</span>
+      </h2>
+
+      <p>
+        <span class="lang lang-es"
+          >Para consultas, cotizaciones o más información, contáctenos:</span
+        >
+        <span class="lang lang-en hidden"
+          >For inquiries, quotes, or more information, contact us:</span
+        >
+      </p>
+
+      <ul>
+        <li>
+          <i class="bi bi-envelope"></i>
+          <span class="lang lang-es">Email: contacto@terrarecycling.com</span>
+          <span class="lang lang-en hidden"
+            >Email: contacto@terrarecycling.com</span
+          >
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <p>© 2025 Terra Recycling. Todos los derechos reservados.</p>
+      <span>Pagina Desarrollada Por ANGEL</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

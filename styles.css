@@ -1,0 +1,722 @@
+:root {
+  --blue: #248ccc;
+  --lightgreen: #94c238;
+  --darkgreen: #12493b;
+  --darkblue: #016394;
+  --greygreen: #7fadb0;
+
+  --title: "Ubuntu", sans-serif;
+  --text: "Noto Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text);
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  padding-inline: 0;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #248ccceb;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.topbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1vw;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  font-family: var(--title);
+  position: fixed;
+  top: 14vw;
+  left: 0;
+  width: 45%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5vw;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.mobile-menu a {
+  margin-bottom: 2vw;
+  color: var(--darkblue);
+  background-color: whitesmoke;
+
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--lightgreen);
+}
+
+.mobile-menu.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-head {
+  width: 30vw;
+  height: auto;
+}
+
+.lang-switch a {
+  padding: 2vw;
+
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin: 1vw;
+}
+
+.hero {
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 5vw 2vw;
+}
+.hero-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+.hero-btn {
+  margin-top: 5vw;
+  font-size: 0.8rem;
+  background-color: var(--lightgreen);
+  color: #fff;
+  border: none;
+  padding: 2vw 3.5vw;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.hero-btn:hover {
+  background-color: whitesmoke;
+  color: var(--lightgreen);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 18vw;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230099ff" fill-opacity="0.8" d="M0,160L48,154.7C96,149,192,139,288,117.3C384,96,480,64,576,80C672,96,768,160,864,192C960,224,1056,224,1152,197.3C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>')
+    repeat bottom center;
+
+  background-size: cover;
+  pointer-events: none;
+  color: #7fadb0;
+  z-index: 1;
+}
+
+a {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0a4d4d;
+  text-decoration: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+a:hover {
+  background-color: #e0f7f7;
+}
+
+section {
+  padding: 6vw 4vw;
+  margin: 0 auto;
+  border-bottom: solid 0.3vw lightgreen;
+}
+section h2 {
+  color: var(--darkblue);
+  font-size: 2rem;
+  font-family: var(--title);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+section ul,
+section p {
+  max-width: 50rem;
+  margin: 0 auto 2rem auto;
+  font-size: 1.125rem;
+}
+
+section h3 {
+  font-size: 1.2rem;
+  color: var(--lightgreen);
+  margin-bottom: 1rem;
+}
+.servicios h2 {
+  font-size: 1.8rem;
+}
+
+.servicio-etapas {
+  text-align: center;
+}
+.servicio-etapas h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.servicio-etapas img {
+  width: 20vw;
+  height: auto;
+}
+
+.compromiso-image {
+  width: 100%;
+  border-radius: 3%;
+}
+.compromiso h3 {
+  margin-bottom: 0;
+}
+.principios {
+  text-align: center;
+}
+
+.principios h3 {
+  margin-bottom: 0.5vw;
+}
+
+.principios h3 i {
+  margin-right: 2vw;
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+.principios-img {
+  width: 25vw;
+  margin-inline: 35%;
+}
+.principios-paragraph {
+  border: solid 0.5vw var(--greygreen);
+  border-radius: 2vw;
+  margin-top: 2vw;
+}
+.confianza p {
+  font-size: 0.9rem;
+}
+.confianza {
+  padding-left: 8vw;
+}
+
+.confianza h2 {
+  margin-bottom: 0;
+}
+.confianza-img {
+  width: 55vw;
+  margin-left: 20%;
+  margin-top: 0;
+  margin-bottom: 4vw;
+}
+
+.confianza h3 {
+  margin-bottom: 1vw;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gama-servicios article {
+  text-align: center;
+}
+
+.gama-servicios article h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5vw;
+}
+
+.gama-servicios article p {
+  font-size: 0.9rem;
+}
+
+.gama-servicios article i {
+  font-size: 2rem;
+  color: var(--darkblue);
+}
+
+.servicios-paragraph {
+  text-align: center;
+  border-bottom: solid 0.5vw var(--greygreen);
+  border-top: solid 0.5vw var(--greygreen);
+  padding: 2vw 1vw;
+  border-radius: 2vw;
+}
+
+.soluciones {
+  text-align: center;
+  padding: 4vw 5vw;
+}
+
+.soluciones-img {
+  width: 100%;
+  border-radius: 2vw;
+  margin: 0vw 0 5vw 0;
+}
+
+.soluciones h3 {
+  margin-bottom: 0.5vw;
+  font-size: 1.3rem;
+}
+
+.beneficios {
+  text-align: center;
+  padding: 4vw 0;
+}
+.beneficios article {
+  margin-inline: auto;
+  margin-top: 10vw;
+}
+
+.beneficios article h3 {
+  margin-bottom: 0.5vw;
+}
+.beneficios article i {
+  font-size: 3rem;
+  color: var(--darkblue);
+  margin: 0;
+}
+.soluciones p::before {
+  content: "➤";
+  color: var(--blue);
+  margin-right: 0.625rem;
+}
+.empresa-hermana p {
+  border-left: solid 0.5vw var(--darkblue);
+  padding-left: 3vw;
+}
+
+.empresa-hermana-img {
+  width: 45vw;
+  border-radius: 2vw;
+  margin-left: 25%;
+}
+
+.porque-elegirnos {
+  width: 100%;
+  padding: 5vw;
+  position: relative;
+  padding: 0;
+  margin: 0vw;
+  text-align: center;
+  border-radius: 1%;
+  color: white;
+  background-image: url("./images/backporque.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.porque-elegirnos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Oscurece la imagen */
+  z-index: 0;
+}
+
+.porque-elegirnos h2 {
+  font-size: 2rem;
+  color: white;
+  backdrop-filter: blur(5px);
+  margin: 5vw 0;
+}
+
+.porque-elegirnos h3 {
+  font-family: var(--title);
+
+  backdrop-filter: blur(5px);
+  margin-top: 5vw;
+  margin-bottom: 0;
+}
+.porque-elegirnos h3::before {
+  content: "◉";
+  color: whitesmoke;
+  margin-right: 0.625rem;
+}
+.porque-elegirnos p {
+  font-size: 1rem;
+  margin-inline: 5vw;
+  border-left: none;
+  font-family: var(--text);
+  backdrop-filter: blur(5px);
+  margin-bottom: 5vw;
+}
+
+.porque-elegirnos img {
+  backdrop-filter: blur(5px);
+  width: 90%;
+}
+
+.contacto {
+  margin: 5vw 0;
+  border: solid;
+}
+
+footer.footer {
+  background-color: #0a4d4d;
+  color: white;
+  text-align: center;
+  padding: 3rem 5vw;
+  font-size: 0.875rem;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+}
+/* Responsive */
+@media only screen and (min-width: 600px) {
+  .lang-switch a {
+    font-size: 1.2rem;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+  }
+  section h2 {
+    font-size: 3rem;
+  }
+
+  section h3 {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 1.6rem;
+  }
+  .servicio-etapas img {
+    width: 15vw;
+  }
+
+  .servicios h2 {
+    font-size: 3rem;
+  }
+
+  .principios-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .confianza p {
+    font-size: 1.5rem;
+  }
+
+  .servicios-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .gama-servicios article h3 {
+    font-size: 1.7rem;
+  }
+
+  .gama-servicios article p {
+    font-size: 1.3rem;
+  }
+
+  .gama-servicios article i {
+    font-size: 3rem;
+  }
+  .servicio-etapas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+  }
+
+  .servicios-grid > article:nth-child(7) {
+    grid-column: 2 / 3;
+  }
+  .servicios-paragraph {
+    font-size: 1.7rem;
+  }
+
+  .soluciones h3 {
+    font-size: 2rem;
+  }
+
+  .beneficios article i {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .logo-head {
+    width: 12vw;
+  }
+
+  .lang-switch a {
+    font-size: 1rem;
+    padding: 0.5vw 1vw;
+  }
+  .desktop-menu {
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+  }
+
+  .desktop-menu a {
+    color: var(--darkgreen);
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    border-left: solid 0.2vw var(--lightgreen);
+    border-right: solid 0.2vw var(--lightgreen);
+
+    transition: background-color 0.3s;
+  }
+
+  .desktop-menu a:hover {
+    background-color: whitesmoke;
+  }
+
+  .mobile-menu,
+  .menu-toggle {
+    display: none !important;
+  }
+
+  .hero-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurece la imagen */
+    z-index: 0;
+  }
+
+  .hero::after {
+    height: 6vw;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230099ff" fill-opacity="0.8" d="M0,160L48,154.7C96,149,192,139,288,117.3C384,96,480,64,576,80C672,96,768,160,864,192C960,224,1056,224,1152,197.3C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>')
+      repeat bottom center;
+  }
+  .hero-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 1vw 2vw;
+  }
+
+  section {
+    border-bottom: dotted 0.2vw lightgreen;
+    padding-inline: 10vw;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+  }
+
+  section h3 {
+    font-size: 1.8rem;
+  }
+  section p {
+    font-size: 1.2rem;
+  }
+
+  .servicios-etapas article {
+    border: solid;
+  }
+  .servicios h2 {
+    font-size: 2.5rem;
+  }
+  .servicios h3 {
+    font-size: 1.5rem;
+  }
+  .servicio-etapas img {
+    width: 10vw;
+  }
+
+  .compromiso-image {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .compromiso {
+    text-align: center;
+  }
+
+  .principios h3 i {
+    font-size: 3rem;
+  }
+
+  .principios-img {
+    width: 15vw;
+    margin-left: 35%;
+  }
+
+  .principios-paragraph {
+    font-size: 1.5rem;
+    padding: 2vw 3vw;
+  }
+
+  .confianza-img {
+    width: 25vw;
+    margin-left: 35%;
+  }
+
+  .gama-servicios {
+    border-bottom: none;
+  }
+
+  .soluciones-img {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 0;
+  }
+
+  .soluciones h2 {
+    margin-top: 0;
+  }
+
+  .beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .beneficios-grid p {
+    font-weight: bolder;
+  }
+
+  .beneficios article {
+    margin-top: 2vw;
+  }
+
+  .empresa-hermana {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw;
+  }
+  .empresa-hermana-img {
+    width: 20vw;
+    margin-inline: auto;
+  }
+
+  .empresa-hermana p {
+    margin: 2vw;
+  }
+
+  .porque-elegirnos {
+    display: flex;
+    padding-inline: 5vw;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .porque-elegirnos h3 {
+    font-size: 1rem;
+  }
+  .porque-elegirnos p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  .porque-elegirnos img {
+    display: none;
+  }
+}
