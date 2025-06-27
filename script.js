@@ -50,12 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
       es: {
         h1: "Destrucción segura de información",
         p: "Garantizamos la protección de datos y el cumplimiento normativo.",
-        btn: { text: "Ver compromiso", link: "#beneficios" },
+        btn: { text: "Conoce más", link: "#beneficios" },
       },
       en: {
-        h1: "Recovery Rate: 95%",
-        p: "We recover critical materials and return them to the supply chain.",
-        btn: { text: "See commitment", link: "#beneficios" },
+        h1: "Secure Information Destruction",
+        p: "We ensure data protection and regulatory compliance.",
+        btn: { text: "Learn more", link: "#beneficios" },
       },
     },
   ];
@@ -89,5 +89,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     updateHeroContent();
-  }, 5500);
+  }, 4600);
 });

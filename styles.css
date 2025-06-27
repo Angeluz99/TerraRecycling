@@ -357,16 +357,7 @@ section h3 {
   color: var(--blue);
   margin-right: 0.625rem;
 }
-.empresa-hermana p {
-  border-left: solid 0.5vw var(--darkblue);
-  padding-left: 3vw;
-}
 
-.empresa-hermana-img {
-  width: 45vw;
-  border-radius: 2vw;
-  margin-left: 25%;
-}
 .logo-bottom {
   display: none;
 }
@@ -379,7 +370,7 @@ section h3 {
   text-align: center;
   border-radius: 1%;
   color: white;
-  background-image: url("./images/backporque.jpg");
+  background-image: url("./images/backporque.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -453,6 +444,30 @@ footer.footer {
 .menu-toggle {
   display: block;
 }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  z-index: 9999;
+  background-color: #25d366;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.44);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float i {
+  color: whitesmoke;
+  width: 3rem;
+  height: 3rem;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: var(--lightgreen);
+}
+
 /* Responsive */
 @media only screen and (min-width: 600px) {
   .lang-switch a {
@@ -701,21 +716,6 @@ footer.footer {
     margin-top: 2vw;
   }
 
-  .empresa-hermana {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2vw;
-  }
-  .empresa-hermana-img {
-    width: 20vw;
-    margin-inline: auto;
-  }
-
-  .empresa-hermana p {
-    margin: 2vw;
-  }
-
   .logo-bottom {
     display: block;
     margin-inline: auto;
@@ -745,5 +745,11 @@ footer.footer {
   }
   .porque-elegirnos img {
     display: none;
+  }
+
+  .whatsapp-float {
+    scale: 1.2;
+    bottom: 3vh;
+    right: 3vw;
   }
 }
