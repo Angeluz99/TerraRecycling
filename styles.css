@@ -87,10 +87,11 @@ body {
 
 .lang-switch a {
   padding: 2vw;
-
+  font-size: 0.8rem;
+  font-family: var(--text);
   color: black;
   text-decoration: none;
-  font-size: 0.8rem;
+
   margin: 1vw;
 }
 
@@ -257,8 +258,9 @@ section h3 {
   font-size: 1.5rem;
 }
 .principios-img {
-  width: 25vw;
-  margin-inline: 35%;
+  margin-top: 0;
+  width: 60%;
+  margin-inline: 20%;
 }
 .principios-paragraph {
   border: solid 0.5vw var(--greygreen);
@@ -429,14 +431,42 @@ section h3 {
   text-align: center;
 }
 
+.whatsapp-contact {
+  width: 5vw;
+  height: 5vw;
+  background-color: #25d366;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.44);
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-bottom: 3vw;
+}
+
 footer.footer {
   background-color: #0a4d4d;
   color: white;
   text-align: center;
   padding: 3rem 5vw;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
 }
 
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+}
+.footer a img {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+}
 .desktop-menu {
   display: none;
 }
@@ -747,9 +777,20 @@ footer.footer {
     display: none;
   }
 
+  .footer a img {
+    width: 1vw;
+    height: 1vw;
+  }
+
   .whatsapp-float {
-    scale: 1.2;
+    width: 5vw;
+    height: 5vw;
     bottom: 3vh;
     right: 3vw;
+    text-align: center;
+  }
+
+  .whatsapp-float i {
+    font-size: 1.5rem;
   }
 }
