@@ -454,10 +454,11 @@ section h3 {
   margin: 5vw 0;
   border-left: double 0.5vw var(--blue);
   border-right: double 0.5vw var(--blue);
+  text-align: center;
 }
 
-.contacto {
-  text-align: center;
+.contacto p {
+  font-size: 1.2rem;
 }
 
 .whatsapp-contact {
@@ -748,6 +749,22 @@ footer.footer {
     width: 25vw;
     margin-left: 35%;
   }
+  .confianza-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    justify-items: center;
+  }
+
+  .confianza article {
+    width: 15 vw;
+    height: 15 vw;
+    padding: 2vw;
+  }
+
+  .confianza article p {
+    font-size: 1rem;
+  }
 
   .gama-servicios {
     border-bottom: none;
@@ -788,10 +805,13 @@ footer.footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-radius: 1%;
   }
-
+  .porque-elegirnos h2 {
+    font-size: 1.5rem;
+  }
   .porque-elegirnos article {
-    margin-inline: 3vw;
+    margin-inline: 2vw;
     width: 9vw;
     margin-bottom: 5vw;
   }
@@ -805,6 +825,10 @@ footer.footer {
   }
   .porque-elegirnos img {
     display: none;
+  }
+
+  .contacto p {
+    font-size: 2rem;
   }
 
   .footer a img {
