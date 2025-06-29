@@ -36,26 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const textos = [
     {
       es: {
-        h1: "Gestión Integral de Activos Electrónicos e Informáticos",
-        p: "Ofrecemos soluciones integrales para la disposición y reciclaje de sus activos electrónicos.",
-        btn: { text: "Conoce más", link: "#servicios" },
-      },
-      en: {
-        h1: "Comprehensive Management of Electronic and IT Assets",
-        p: "We offer comprehensive solutions for the disposal and recycling of your electronic assets.",
-        btn: { text: "Learn more", link: "#servicios" },
+        h1: "Soluciones Integrales para Activos Electrónicos e Informáticos",
+        p: "Gestionamos de forma segura y responsable la recolección, disposición y reciclaje de equipos electrónicos e informáticos.",
+        btn: { text: "Explorar servicios", link: "#servicios" },
       },
     },
     {
       es: {
-        h1: "Destrucción segura de información",
-        p: "Garantizamos la protección de datos y el cumplimiento normativo.",
-        btn: { text: "Conoce más", link: "#beneficios" },
-      },
-      en: {
-        h1: "Secure Information Destruction",
-        p: "We ensure data protection and regulatory compliance.",
-        btn: { text: "Learn more", link: "#beneficios" },
+        h1: "Eliminación Segura de Información Confidencial",
+        p: "Protegemos tus datos con procesos certificados que cumplen con las normativas más exigentes.",
+        btn: { text: "Ver detalles", link: "#beneficios" },
       },
     },
   ];

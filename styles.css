@@ -236,7 +236,9 @@ section h3 {
   width: 20vw;
   height: auto;
 }
-
+.economia-circular {
+  text-align: center;
+}
 .compromiso-image {
   width: 100%;
   border-radius: 3%;
@@ -252,7 +254,7 @@ section h3 {
   margin-bottom: 0.5vw;
 }
 
-.principios h3 i {
+.economia-circular h3 i {
   margin-right: 2vw;
   color: var(--blue);
   font-size: 1.5rem;
@@ -267,25 +269,51 @@ section h3 {
   border-radius: 2vw;
   margin-top: 2vw;
 }
-.confianza p {
-  font-size: 0.9rem;
-}
+
 .confianza {
-  padding-left: 8vw;
+  text-align: center;
+  padding: 4vw 0;
 }
 
 .confianza h2 {
   margin-bottom: 0;
 }
 .confianza-img {
-  width: 55vw;
-  margin-left: 20%;
+  width: 50%;
   margin-top: 0;
   margin-bottom: 4vw;
 }
 
+.confianza-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+  justify-items: center;
+}
+
+.confianza article {
+  background-color: var(--darkblue);
+  width: 40vw;
+  height: 40vw;
+  margin-top: 2vw;
+  padding: 1vw;
+  border: solid 0.2vw var(--greygreen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-inline: 2vw;
+}
 .confianza h3 {
-  margin-bottom: 1vw;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.confianza p {
+  color: whitesmoke;
+  margin: 0;
+  font-size: 0.8rem;
 }
 
 .servicios-grid {
@@ -424,7 +452,8 @@ section h3 {
 
 .contacto {
   margin: 5vw 0;
-  border: solid;
+  border-left: double 0.5vw var(--blue);
+  border-right: double 0.5vw var(--blue);
 }
 
 .contacto {
@@ -498,7 +527,8 @@ footer.footer {
   background-color: var(--lightgreen);
 }
 
-/* Responsive */
+/* Responsive --------------------------------- */
+
 @media only screen and (min-width: 600px) {
   .lang-switch a {
     font-size: 1.2rem;
