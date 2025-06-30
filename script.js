@@ -40,12 +40,23 @@ document.addEventListener("DOMContentLoaded", () => {
         p: "Gestionamos de forma segura y responsable la recolección, disposición y reciclaje de equipos electrónicos e informáticos.",
         btn: { text: "Explorar servicios", link: "#servicios" },
       },
+      en: {
+        h1: "Comprehensive Management of Electronic and IT Assets",
+        p: "We offer comprehensive solutions for the disposal and recycling of your electronic assets.",
+        btn: { text: "Learn more", link: "#services" },
+      },
     },
     {
       es: {
         h1: "Eliminación Segura de Información Confidencial",
         p: "Protegemos tus datos con procesos certificados que cumplen con las normativas más exigentes.",
         btn: { text: "Ver detalles", link: "#beneficios" },
+      },
+
+      en: {
+        h1: "Secure Elimination of Confidential Information",
+        p: "We protect your data with certified processes that meet the highest regulatory standards.",
+        btn: { text: "View details", link: "#beneficios" },
       },
     },
   ];
