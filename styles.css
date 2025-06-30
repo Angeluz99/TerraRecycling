@@ -21,7 +21,16 @@ body {
   background-color: #ffffff;
   padding-inline: 0;
 }
-
+a {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0a4d4d;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
 .topbar {
   position: fixed;
   top: 0;
@@ -63,7 +72,7 @@ body {
 }
 
 .mobile-menu a {
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
   color: var(--darkblue);
   background-color: whitesmoke;
 
@@ -83,6 +92,7 @@ body {
 .logo-head {
   width: 30vw;
   height: auto;
+  padding: 0;
 }
 
 .lang-switch a {
@@ -177,18 +187,6 @@ body {
   pointer-events: none;
   color: #7fadb0;
   z-index: 1;
-}
-
-a {
-  display: inline-block;
-  background-color: #ffffff;
-  color: #0a4d4d;
-  text-decoration: none;
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.375rem;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  font-size: 1rem;
 }
 
 a:hover {
@@ -457,10 +455,12 @@ section h3 {
   text-align: center;
 }
 
-.contacto p {
+.contacto p a {
+  color: var(--darkblue);
+  text-decoration: none;
+  font-weight: bold;
   font-size: 1.2rem;
 }
-
 .whatsapp-contact {
   width: 5vw;
   height: 5vw;
@@ -474,6 +474,7 @@ section h3 {
   justify-content: center;
   margin-inline: auto;
   margin-bottom: 3vw;
+  margin-top: 3vw;
 }
 
 footer.footer {
@@ -831,8 +832,8 @@ footer.footer {
     display: none;
   }
 
-  .contacto p {
-    font-size: 2rem;
+  .contacto p a {
+    font-size: 1.5rem;
   }
 
   .footer a img {
