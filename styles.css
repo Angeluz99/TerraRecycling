@@ -455,6 +455,65 @@ section h3 {
   text-align: center;
 }
 
+.contacto h2 {
+  margin-bottom: 0;
+}
+
+.contact-form {
+  margin-top: 0;
+  background-color: #f9f9f9;
+  padding: 3rem 5vw;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.contactForm span {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  font-weight: bold;
+  color: #0a4d4d;
+  margin-bottom: 0.25rem;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contactForm textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contactForm button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--darkgreen, #12493b);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+  background-color: var(--lightgreen, #94c238);
+  color: #0a4d4d;
+}
+
 .contacto p a {
   color: var(--darkblue);
   text-decoration: none;
@@ -608,6 +667,13 @@ footer.footer {
 
   .beneficios article i {
     font-size: 5rem;
+  }
+
+  .contactForm input,
+  .contactForm select,
+  .contactForm textarea,
+  .contactForm label {
+    font-size: 1.5rem;
   }
 }
 
@@ -832,8 +898,17 @@ footer.footer {
     display: none;
   }
 
-  .contacto p a {
-    font-size: 1.5rem;
+  .contact-email {
+    font-size: 2rem;
+  }
+  .contacto i {
+    font-size: 2rem;
+  }
+  .contactForm input,
+  .contactForm select,
+  .contactForm textarea,
+  .contactForm label {
+    font-size: 1.2rem;
   }
 
   .footer a img {

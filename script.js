@@ -12,24 +12,54 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function switchLang(lang) {
+    // Show/hide lang elements (Esto sigue funcionando para encabezados, párrafos y otros elementos con <span> dentro)
     document.querySelectorAll(".lang").forEach((el) => {
       el.classList.toggle("hidden", !el.classList.contains(`lang-${lang}`));
     });
+
+    // Manejar etiquetas (label) directamente (para el formulario)
+    document.querySelectorAll("label[data-es]").forEach((label) => {
+      const text = label.getAttribute(`data-${lang}`);
+      if (text) {
+        label.textContent = text;
+      }
+    });
+
+    // Manejar botones directamente (para el botón de submit del formulario)
+    document.querySelectorAll("button[data-es]").forEach((button) => {
+      const text = button.getAttribute(`data-${lang}`);
+      if (text) {
+        button.textContent = text;
+      }
+    });
+
+    // Fix <option> translation (Esto ya lo tenías y funciona)
+    document.querySelectorAll("select option").forEach((opt) => {
+      const text = opt.getAttribute(`data-${lang}`);
+      if (text) {
+        opt.textContent = text;
+      }
+    });
+
     localStorage.setItem("site-lang", lang);
   }
 
+  // **** ¡ESTAS SON LAS LÍNEAS QUE FALTABAN! ****
+
+  // 1. Llamada inicial a switchLang al cargar la página
   const storedLang = localStorage.getItem("site-lang");
   const browserLang = navigator.language.slice(0, 2);
   const currentLang = storedLang || (browserLang === "en" ? "en" : "es");
-  switchLang(currentLang);
+  switchLang(currentLang); // Esta línea inicia la traducción
 
+  // 2. Event listener para el botón de cambio de idioma
   document.querySelector(".lang-switch a")?.addEventListener("click", (e) => {
     e.preventDefault();
     const newLang = localStorage.getItem("site-lang") === "en" ? "es" : "en";
-    switchLang(newLang);
+    switchLang(newLang); // Esta línea cambia el idioma al hacer click
   });
 
-  // Hero slide logic
+  // Hero slide logic (Tu código existente para el carrusel de texto)
   const slides = document.querySelectorAll(".hero-slide");
   const heroContent = document.getElementById("hero-content");
 
@@ -67,21 +97,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const lang = localStorage.getItem("site-lang") || "es";
     const content = textos[index][lang];
 
-    heroContent.querySelector(`h1.lang-${lang}`).textContent = content.h1;
-    heroContent.querySelector(`p.lang-${lang}`).textContent = content.p;
+    const h1Element = heroContent.querySelector(`h1.lang-${lang}`);
+    const pElement = heroContent.querySelector(`p.lang-${lang}`);
+
+    if (h1Element) h1Element.textContent = content.h1;
+    if (pElement) pElement.textContent = content.p;
 
     const btn = heroContent.querySelector(
       `#hero-btn${lang === "en" ? "-en" : ""}`
     );
-    btn.textContent = content.btn.text;
-    btn.setAttribute("href", content.btn.link);
+    if (btn) {
+      btn.textContent = content.btn.text;
+      btn.setAttribute("href", content.btn.link);
+    }
   }
 
-  // Inicial
+  // Inicialización de slides y contenido del hero
   slides.forEach((s, i) => s.classList.toggle("active", i === index));
   updateHeroContent();
 
-  // Intervalo
+  // Intervalo para cambiar slides
   setInterval(() => {
     index = (index + 1) % slides.length;
 
